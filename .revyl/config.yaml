@@ -1,0 +1,4 @@
+project:
+    id: 00a80253-89f4-48ee-b69d-95fdc2a07099
+session:
+    idle_timeout_seconds: 1800

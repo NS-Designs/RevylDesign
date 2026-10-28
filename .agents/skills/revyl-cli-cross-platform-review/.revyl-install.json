@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "name": "revyl-cli-cross-platform-review",
+  "cli_version": "v0.1.196",
+  "files": {
+    "SKILL.md": "3afd9656dc8075914b03aea546aebb569c770f456c39b33626c1bf34ab87df3f",
+    "agents/openai.yaml": "342cf49e89f7f99f3f9d1a0f65aff4fc8fa07439ca0ab59a241181bec09af0a2"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "name": "revyl-cli-analyze",
+  "cli_version": "v0.1.196",
+  "files": {
+    "SKILL.md": "665b630c81f49cfbc8a893e6746b1661ca0750d773b20e5da6e341418321548a",
+    "agents/openai.yaml": "5c95bf34062095e93d3785350adf92630c4237bedd0128c06f529a809883d521"
+  }
+}

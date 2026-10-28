@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "name": "revyl-cli-import-tests",
+  "cli_version": "v0.1.196",
+  "files": {
+    "SKILL.md": "10cbab361f9af92c1e36c9277778571d28a029191e82374c206f08a3824dd950",
+    "agents/openai.yaml": "cf3d4c0f8926749511b712d9b3cd694ffc573c3a3599bc99e1d04eab6cc5fe73",
+    "references/manual-cases.md": "f151dea86f5c2146759aa02621f7116a57ff42f772d933819479312e424ca461",
+    "references/mobile-automation.md": "2eea5823a03714b4f78042d9d3d034404e3c5e2f0373eedbf795f1cc9000f255",
+    "references/web-e2e.md": "cfc86414b1773c38018a4364ea08c80a3497890fada4f0491690a5dfe85bf8b8"
+  }
+}

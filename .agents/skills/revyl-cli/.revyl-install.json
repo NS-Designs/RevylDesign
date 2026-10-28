@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "name": "revyl-cli",
+  "cli_version": "v0.1.196",
+  "files": {
+    "SKILL.md": "696f74c14f941d2f8b6227b88d3eb36c2b9625552d0a75888449412c167714c5",
+    "agents/openai.yaml": "cee71c193178f08d5fc8d83e006492379c14fc1f6d5c9d4aada4c066261dba71"
+  }
+}

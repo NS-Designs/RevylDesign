@@ -1,0 +1,42 @@
+project:
+    id: f63a4b29-281a-4c8f-862f-7dd62a12b0db
+session:
+    idle_timeout_seconds: 1800
+build:
+    framework: expo
+    profiles:
+        development:
+            ios:
+                build_commands:
+                    - npx --yes eas-cli build --platform ios --profile development --local --output build/app.tar.gz
+                output_path: build/app.tar.gz
+            android:
+                build_commands:
+                    - npx --yes eas-cli build --platform android --profile development --local --output build/app.apk
+                output_path: build/app.apk
+        preview:
+            ios:
+                app_id: 19a49a14-6d09-42ac-a152-233581bacbf4
+                setup_commands:
+                    - npm install
+                    - if [ ! -d ios ]; then npx expo prebuild --platform ios; fi
+                build_commands:
+                    - cd ios && if [ ! -d Pods ] || [ ! -d filamenttracker.xcworkspace ]; then pod install; fi && xcodebuild -workspace filamenttracker.xcworkspace -scheme 'filamenttracker' -configuration Release -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' -derivedDataPath build
+                output_path: ios/build/Build/Products/Release-iphonesimulator/*.app
+            android:
+                app_id: 720cc72d-7867-4bde-8fb2-67991c4f7f93
+                setup_commands:
+                    - npm install
+                    - if [ ! -d android ]; then npx expo prebuild --platform android; fi
+                build_commands:
+                    - cd android && ./gradlew assembleRelease
+                output_path: android/app/build/outputs/apk/release/app-release.apk
+pr_review:
+    enabled: true
+    build:
+        kind: revyl
+        profile: preview
+    proof_of_changes:
+        enabled: true
+        harness:
+            kind: revyl

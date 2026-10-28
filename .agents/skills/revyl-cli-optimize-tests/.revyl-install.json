@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "name": "revyl-cli-optimize-tests",
+  "cli_version": "v0.1.196",
+  "files": {
+    "SKILL.md": "f91ba127fbdac1326fb514606e8f755b7a8ab0eb5507dea558032d3831eabf17",
+    "agents/openai.yaml": "40e3d1cd3f1647e4acfb2558a5cefe8b5e838dff8fc6938d3cc6efb0b6b6689c"
+  }
+}
