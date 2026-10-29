@@ -66,7 +66,7 @@ export default function App() {
             )}
           />
           <Pressable style={styles.button} onPress={() => setScreen('add')}>
-            <Text style={styles.buttonText}>Add spool</Text>
+            <Text style={styles.buttonText}>+ New spool</Text>
           </Pressable>
         </>
       )}
